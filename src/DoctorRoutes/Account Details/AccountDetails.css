@@ -1,0 +1,382 @@
+.background-image-details {
+    background-image: url("../../assets/doctorDetails.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 160vh;
+}
+
+.background-image-details-parent {
+    background-image: url("../../assets/parentAccount.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270vh;
+}
+
+.background-image-details-baby {
+  background-image: url("../../assets/babyPage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
+
+.custom-text{
+    position: absolute;
+    top: -33%;
+    left: 30%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-text-doc{
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-text-baby{
+  position: absolute;
+  top: -37%;
+  left: 25%;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-container-baby {
+  background-image: url("../../assets/babyDetails.jpg");
+  display: flex;
+  flex-direction: column; /* Changed to column for better form alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 300px; /* Reduced width */
+  height: 60vh; /* Reduced height */
+  position: absolute;
+  top: 0%; /* Adjusted top position */
+  left: 20%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  z-index: 1005;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjusted padding for smaller content */
+}
+
+.details-container-parent {
+  background-image: url("../../assets/parentDetails.jpg");
+  display: flex;
+  flex-direction: column; /* Changed to column for better form alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 300px; /* Reduced width */
+  height: 60vh; /* Reduced height */
+  position: absolute;
+  top: 0%; /* Adjusted top position */
+  left: 70%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  z-index: 1005;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjusted padding for smaller content */
+}
+
+.details-container-dashboard{
+  background-image: url("../../assets/babyDashboard.jpg");
+  display: flex;
+  flex-direction: column; /* Changed to column for better form alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 730px; /* Reduced width */
+  height: 45vh; /* Reduced height */
+  position: absolute;
+  top: 105%; 
+  left: 2%;
+  border-radius: 10px;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  z-index: 1005;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjusted padding for smaller content */
+  transition: transform 0.3s ease-in-out;
+}
+
+.details-container-dashboard:hover{
+  transform: scale(1.1);
+}
+
+.details-view-baby {
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.details-view-parent {
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+
+.details-view p {
+  margin: 10px 0;
+}
+
+
+.doctor-account-container {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    width: 800px;
+    height: 65vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e9eaed00;
+    border-radius: 8px;
+   
+  }
+
+  .update-page-form-baby{
+    background-image: url("../../assets/babyDetails.jpg");
+  display: flex;
+  flex-direction: column; /* Changed to column for better form alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 300px; /* Reduced width */
+  height: 60vh; /* Reduced height */
+  position: absolute;
+  top: 0%; /* Adjusted top position */
+  left: 20%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  z-index: 1005;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Adjusted padding for smaller content */
+  }
+
+  .update-page-form-parent{
+    background-image: url("../../assets/parentDetails.jpg");
+    display: flex;
+    flex-direction: column; /* Changed to column for better form alignment */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 300px; /* Reduced width */
+    height: 60vh; /* Reduced height */
+    position: absolute;
+    top: 0%; /* Adjusted top position */
+    left: 70%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    z-index: 1005;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Adjusted padding for smaller content */
+  }
+
+
+  .input-update-baby,
+  .gender-select-baby {
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .input-container-column {
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .doctor-account-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .details-view {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../../assets/details.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 10px;
+    left: -3%;
+    width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .details-view-2 {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../../assets/babyDet.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 10px;
+    top: 190%;
+    left: 18%;
+    width: 59%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .details-view-3 {
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url('../../assets/details.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 10px;
+    top: 95%;
+    left: 18%;
+    width: 60%;
+    height: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .details-view p {
+    margin: 10px 0;
+  }
+  
+  .account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center horizontally */
+    justify-content: space-between;
+  }
+  
+  .input-container-details {
+    width: 70%;
+    max-width: 300px; 
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 8px;
+  }
+  
+  .input-container-details label {
+    display: block; /* Ensure labels are displayed as block elements */
+    margin-bottom: 5px;
+  }
+  
+  .input-container-details input {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove the border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+  .update-details-button{
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #89b3fb00;
+    margin-top: 20px;
+    width: 40%;
+    left: 59%;
+    top: 38%;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  .update-details-button-2{
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #89b3fb00;
+    margin-top: 20px;
+    width: 30%;
+    left: 17%;
+    top: 80%;
+    text-decoration: underline;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  .update-details-button-baby{
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #89b2fb;
+    margin-top: 20px;
+    width: 60%;
+    left: 20%;
+    top: 85%;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  
+  .update-details-button-baby:hover,
+  .account-form button:hover{
+    background: #a0c3ff;
+    transform: scale(1.1);
+  }
+
+  .update-details-button:hover,
+  .update-details-button-2:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .account-form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #89b2fb;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  

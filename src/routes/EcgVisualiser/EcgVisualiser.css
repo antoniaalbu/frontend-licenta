@@ -1,0 +1,5 @@
+.chart-container {
+    position: absolute;
+    margin-top: 50px; /* Adjust the margin-top value to move the chart lower */
+    left: 20%;
+  }

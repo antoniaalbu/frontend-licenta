@@ -1,0 +1,108 @@
+.background-image-notif {
+  background-image: url("../assets/not.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.notifications {
+  padding: 10px;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.filters input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.filter-type {
+  position: absolute;
+  top: 73%;
+  left: 28%;
+  width: 15%;
+}
+
+.filter-time {
+  position: absolute;
+  top: 73%;
+  left: 45%;
+  width: 15%;;
+}
+
+.notification-list {
+  margin-top: 58px;
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 23%;
+  height: 88vh; /* Fixed height */
+  overflow-y: scroll; /* Enables vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.notification-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.notification {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 80%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification:hover{
+ 
+  transform: scale(1.05);
+}
+
+.notification p {
+  margin: 0;
+}
+
+.delete-notif{
+  position: absolute;
+  top: 48%;
+  left: 55%;
+ 
+  padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    margin-top: 20px;
+    width: 20%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.delete-notif:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.delete-notif-by-Id{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  background-color: rgb(186, 199, 254); /* Example background color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

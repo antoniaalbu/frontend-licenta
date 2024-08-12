@@ -1,0 +1,173 @@
+.update-page-form{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 90vh;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    z-index: 1005;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .update-baby{
+    background-image: url("../../assets/updateBaby.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .update-parent{
+    background-image: url("../../assets/updateParent.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .input-update{
+    width: 70%;
+    box-sizing: border-box;
+    height: 20px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-list {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 70%;
+    box-sizing: border-box;
+    
+  }
+  
+  .dropdown-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+  .custom-text-component-update {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .update-table-container {
+    position: absolute;
+    top: 50%;
+    left: 66.4%;
+    width: 67%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: hidden;
+   
+  }
+
+  .update-parent-table {
+    top: 50%;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+   
+  }
+
+  .update-parent-table-container {
+    position: absolute;
+    top: 55%;
+    left: 66.3%;
+    width: 67%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: auto; 
+    height: 90vh;
+   
+  }
+  
+  
+  .update-baby-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+
+  .update-baby-table th,.update-parent-table th,  .update-baby-table td, .update-parent-table td {
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .update-baby-table th, .update-parent-table th {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .update-baby-table tbody tr:nth-child(even), .update-parent-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .update-baby-table tbody tr:hover, .update-parent-table tbody tr:hover {
+    background-color: #ddddddb0;
+  }
+
+  .button-parent{
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #F1E1EB;
+    margin-top: 20px;
+    width: 57%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button-update-parent{
+    padding: 6px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #F1E1EB;
+    margin-top: 5px;
+    width: 70%;
+    transition: transform 0.3s ease-in-out;
+  }
+ 
+ 
+  .button-parent:hover,
+  .button-update-parent:hover{
+    transform: scale(1.1);
+    background: #C2ADBA;
+  }
+
+  .name-select{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 70%;
+  }
+  
+  

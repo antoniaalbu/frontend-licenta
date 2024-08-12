@@ -1,0 +1,46 @@
+.notification-modal {
+  position: fixed;
+  bottom: 20px; 
+  left: -300px; 
+  width: 300px; 
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 1500; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.notification-modal:hover{
+  transform: scale(1.1);
+}
+
+
+.notif-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative; 
+}
+
+.notif-modal-content p {
+  margin: 0;
+}
+
+.close-modal-notif {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #ffffff00;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-modal-notif:hover {
+  transform: scale(1.1);
+}

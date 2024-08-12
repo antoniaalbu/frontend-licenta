@@ -1,0 +1,6 @@
+.background-image-details-baby {
+    background-image: url("../../assets/babyPage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220vh;
+}

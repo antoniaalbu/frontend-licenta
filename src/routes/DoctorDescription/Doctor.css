@@ -1,0 +1,92 @@
+.container-doctor {
+  position: relative;
+  text-align: center;
+  margin-top: 0;
+  height: 100vh;
+}
+
+.background-container-doctor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280%;
+  z-index: -1;
+}
+
+.background-image-doctors-1 {
+  background-image: url("../../assets/doctorPage1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image-doctors-2 {
+  background-image: url("../../assets/doctorPage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+}
+
+.doctor-image {
+  height: auto; 
+  position: absolute; 
+  top: 55%; 
+  left: 0%; 
+  transform: translateX(-50%); 
+  animation: pulse 2s ease-in-out forwards;
+  border-radius: 15px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.slide-image {
+  position: absolute;
+  top: 147.35%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-image img {
+  width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.slide-image:hover img {
+  transform: scale(1.02);
+}
+
+.sliding-image-container-doctor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sliding-image-doctor-1 {
+  position: absolute;
+  top: 67%;
+  right: -700px;
+  transform: translateY(50%);
+  transition: right 0.5s ease-in-out; 
+  border-radius: 15px;
+}
+
+.sliding-image-container-doctor:hover .sliding-image-doctor-1  {
+  right: 7%; 
+}

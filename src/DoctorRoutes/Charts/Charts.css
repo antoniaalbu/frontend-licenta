@@ -1,0 +1,56 @@
+.chart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.filters-container {
+    width: 20%; /* Adjust width of the filter container */
+    background-color: rgb(171, 201, 241);
+    border-radius: 10px;
+    padding: 20px;
+    height: 85%;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.chart-wrapper {
+    flex: 1; /* Take remaining space */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.filter {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure filters take full width */
+}
+
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center; /* Center-align labels */
+}
+
+.filter input {
+    width: 80%; /* Adjust input width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

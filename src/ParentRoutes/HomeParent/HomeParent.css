@@ -1,0 +1,146 @@
+
+.container-home {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    height: 100vh;
+  }
+  
+  .background-container-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280%;
+    z-index: -1;
+  }
+  
+  .background-image-parent {
+    background-image: url("../../assets/homeParent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .custom-text-parent {
+    font-weight: 200; 
+    position: absolute;
+    top: 18.5%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+   
+  }
+  
+  .gif-background {
+    position: absolute;
+    top: 35%;
+    left: 59.5%;
+    width: 35%;
+    height: 12%;
+    background-image: url("../../assets/ecg.gif"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .background-image-doctor2 {
+    background-image: url("../../assets/homeDoctor2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-container-parent {
+    width: 30%; 
+    height: 32vh; 
+    margin-left: 50%; 
+    top: -55%;
+  }
+  
+  .slider-container-parent-2 {
+    width: 45%; 
+    height: 50vh; 
+    margin-left: 26%; 
+    top: -36%;
+  }
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  
+  .image-container img:hover {
+    transform: scale(0.9); /* Scale down the image */
+  }
+
+  .babies-container{
+    position: absolute;
+    top: 54%;
+    left: 41%;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .background-container-home {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      z-index: -1;
+    }
+  
+    .custom-text-parent {
+      font-weight: 200; 
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+     
+    }
+  }
+  

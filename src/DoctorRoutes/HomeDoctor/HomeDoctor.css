@@ -1,0 +1,202 @@
+
+.container-home {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    height: 100vh;
+  }
+  
+  .background-container-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280%;
+    z-index: -1;
+  }
+  
+  .background-image-doctor {
+    background-image: url("../../assets/homeDoctor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .pulse-text {
+    font-weight: 300; 
+    position: absolute;
+    top: 62.8%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .gif-background {
+    position: absolute;
+    top: 35%;
+    left: 59.5%;
+    width: 35%;
+    height: 12%;
+    background-image: url("../../assets/ecg.gif"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .custom-text-doctor {
+    font-weight: 200; 
+    position: absolute;
+    top: 31.5%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+   
+  }
+  
+  .background-image-doctor2 {
+    background-image: url("../../assets/homeDoctor2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-container-doctor {
+    width: 50%; 
+    height: 50vh; 
+    margin-left: 28%; 
+    top: 13%;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  
+  .image-container img:hover {
+    transform: scale(0.9); /* Scale down the image */
+  }
+
+  .baby-names-container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    top: 34%;
+    left: 6%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .baby-names-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; /* Darker color for better readability */
+  }
+  
+  .baby-names-container ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+  }
+  
+  .baby-names-container li {
+    font-size: 18px;
+    padding: 10px 0; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Add a subtle bottom border */
+  }
+  
+  .baby-names-container li:last-child {
+    border-bottom: none; /* Remove the bottom border for the last item */
+  }
+  
+  .baby-names-container li a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    transition: color 0.3s;
+  }
+  
+  .baby-names-container li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+
+  .baby-redirect{
+    background-color: #0057b300;
+    border: none;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .baby-redirect:hover{
+    transform: scale(1.1);
+    color: #0056b3;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .background-container-home {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 130%;
+      z-index: -1;
+    }
+  
+    .pulse-text {
+      font-weight: 300; 
+      position: absolute;
+      top: 62.8%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+      animation: pulse 2s ease-in-out infinite;
+    }
+  }
+  

@@ -1,0 +1,428 @@
+.register-container {
+    position: relative;
+  }
+  
+  .backdrop-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    backdrop-filter: blur(30px);
+  }
+  
+  .backdrop-container-half {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+  }
+  
+  .background-image-register-baby {
+    background-image: url("../../assets/registerBaby1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 280vh;
+  }
+
+  
+  
+  .register-form-baby {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: var(--register-form-width);
+    height: 50vh;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    z-index: 1005;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+  .update-form-baby {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    z-index: 1005;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+  }
+
+  
+  
+  .register-form-baby.visible, .update-form-baby.visible {
+    opacity: 1;
+  }
+  
+  .input-register-baby,
+  .input-date-register,
+  .gender-select {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .input-register,
+  .input-date-register {
+    width: 57%;
+    box-sizing: border-box;
+  }
+  
+  .gender-select {
+    width: 57%;
+    box-sizing: border-box;
+  }
+  
+  .button-baby,
+  .close-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #a7d3dc;
+    margin-top: 20px;
+    width: 57%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .close-button-baby{
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #a7d3dc00;
+    margin-top: -40px;
+   
+    left: 60%;
+    width: 57%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button-baby:hover,
+  .close-button:hover {
+    background-color: #a7d3dc;
+    transform: scale(1.1);
+  }
+  
+  .show-form-button{
+    position: absolute;
+    width: 15%;
+    left: 10%;
+    top: 85%;
+    height: 8%;
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #CDDDF4;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text horizontally */
+    line-height: 1; /* Adjust line-height for vertical alignment if needed */
+  }
+
+  .show-baby-list-button{
+    position: absolute;
+    padding: 20px 40px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #CDDDF4;
+    margin-top: 20px;
+    width: 15%;
+    left: 80%;
+    top: 44%;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add box shadow here */
+  }
+
+  .update-button{
+    position: absolute;
+    width: 15%;
+    left: 41%;
+    top: 85%;
+    height: 8%;
+    padding: 12px 24px; /* Adjust padding as needed */
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #CDDDF4;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text horizontally */
+    line-height: 1; /* Adjust line-height for vertical alignment if needed */
+  }
+
+  .baby-names-container-register {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    top: 34%;
+    left: 38%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .baby-names-container-register h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; /* Darker color for better readability */
+  }
+  
+  .baby-names-container-register ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+  }
+  
+  .baby-names-container-register li {
+    font-size: 18px;
+    padding: 10px 0; /* Add padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Add a subtle bottom border */
+  }
+  
+  .baby-names-container-regsiter li:last-child {
+    border-bottom: none; /* Remove the bottom border for the last item */
+  }
+  
+  .baby-names-container-register li a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    transition: color 0.3s;
+  }
+  
+  .baby-names-container-register li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+
+  .baby-names-baby-page{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    top: 20%;
+    left: 6%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .update-table-button{
+    width: auto;
+    padding: 10px 40px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #CDDDF4;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .delete-button{
+    position: absolute;
+  padding: 12px 24px; /* Adjust padding as needed */
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #CDDDF4;
+  margin-top: 20px;
+  width: 15%;
+  left: 73%;
+  top: 85%;
+  height: 8%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text horizontally */
+  line-height: 1; /* Adjust line-height for vertical alignment if needed */
+}
+  
+  .show-form-button:hover {
+    background: #9cafca;
+    transform: scale(1.1);
+  }
+
+  .show-baby-list-button:hover, .update-table-button:hover, .delete-button:hover {
+    background: #9cafca;
+    transform: scale(1.1);
+  }
+
+  .update-button:hover{
+    background: #9cafca;
+    transform: scale(1.1);
+  }
+  
+  .custom-text-component {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .custom-text-component-baby-1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .close-button-baby {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    font-size: 20px;
+    
+  }
+  
+  .close-button-baby:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .baby-list-table-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0.1; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .baby-list-table-container.visible {
+    opacity: 1; 
+  }
+  
+
+  .view-baby-list-table-container {
+    position: absolute;
+    top: 67.5%;
+    left: 65%;
+    width: 60% ;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .baby-list-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+
+  .view-baby-list-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .baby-list-table th, .view-baby-list-table th, .baby-list-table td, .view-baby-list-table td {
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .baby-list-table th,.view-baby-list-table th {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .baby-list-table tbody tr:nth-child(even), .view-baby-list-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .baby-list-table tbody tr:hover, .view-baby-list-table tbody tr:hover {
+    background-color: #ddddddb0;
+  }
+
+  .baby-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Adjust as needed */
+    height: 100%;
+    transition: left 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .baby-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-image-baby {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Adjust as needed */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 1001; /* Ensure the slide image is on top */
+  }
+  
+  .slide-image-baby img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+ 
